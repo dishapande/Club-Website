@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLIMMER | Premium Lounge Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor">
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#menu" onclick="closeMobile()">Menu</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#reserve" onclick="closeMobile()">Reserve</a>
+</div>
+
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">GLIMMER</a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+  </ul>
+  <button class="nav-reserve" onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})">Reserve a Table</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <h1 class="hero-title"><em>GLIMMER</em></h1>
+    <p class="hero-sub">Where tapas culture meets the art of living well. An extraordinary culinary journey awaits.</p>
+    <div class="hero-cta">
+      <a href="#reserve" class="btn-primary">Reserve Your Table</a>
+      <a href="#menu" class="btn-outline">Explore Menu</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Tapas &amp; Small Plates</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Fine Wines &amp; Cocktails</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Live Music Events</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Private Dining</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Award-Winning Experience</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Sangria Bar</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Tapas &amp; Small Plates</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Fine Wines &amp; Cocktails</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Live Music Events</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Private Dining</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Award-Winning Experience</span>
+    <span class="marquee-sep">✦</span>
+    <span class="marquee-item">Sangria Bar</span>
+    <span class="marquee-sep">✦</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-img-main">
+        <div class="img-placeholder">The Art of Spanish Cuisine<br>& Warm Hospitality</div>
+      </div>
+      <div class="about-img-accent">
+        <div class="img-placeholder">Curated Wine Selection</div>
+      </div>
+      <div class="about-badge">
+        <div class="about-badge-inner">
+          <div class="about-badge-num">40+</div>
+          <div class="about-badge-txt">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="section-label reveal">Our Story</span>
+      <h2 class="section-title reveal reveal-delay-1">A Legacy of <em>Flavor</em> &amp; Passion</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+      <p class="reveal reveal-delay-2">Born in the heart of Chicago's Gold Coast, Glimmer has been redefining the tapas experience for over four decades. We are more than a restaurant — we are a destination, a gathering place, a celebration of life through food, wine, and vibrant company.</p>
+      <p class="reveal reveal-delay-3">Our chefs travel annually to Spain to bring back authentic traditions, reimagined with the finest local ingredients. Each small plate tells a story of culture, craft, and culinary devotion.</p>
+      <div class="about-stats reveal">
+        <div>
+          <div class="stat-num">200+</div>
+          <div class="stat-label">Wine Labels</div>
+        </div>
+        <div>
+          <div class="stat-num">60+</div>
+          <div class="stat-label">Tapas Dishes</div>
+        </div>
+        <div>
+          <div class="stat-num">4.8★</div>
+          <div class="stat-label">Guest Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="menu-header">
+    <span class="section-label reveal">Curated Selections</span>
+    <h2 class="section-title reveal reveal-delay-1">The <em>Menu</em></h2>
+    <div class="gold-line reveal reveal-delay-2" style="margin: 24px auto;"></div>
+  </div>
+  <div class="menu-tabs reveal">
+    <button class="tab-btn active" onclick="switchTab(event,'tapas')">Tapas</button>
+    <button class="tab-btn" onclick="switchTab(event,'mains')">Mains</button>
+    <button class="tab-btn" onclick="switchTab(event,'drinks')">Drinks</button>
+    <button class="tab-btn" onclick="switchTab(event,'desserts')">Desserts</button>
+  </div>
+
+  <div class="menu-panel active" id="panel-tapas">
+    <div class="menu-grid">
+      <div class="menu-item reveal"><div class="menu-item-top"><span class="menu-item-name">Patatas Bravas</span><span class="menu-item-price">$12</span></div><p class="menu-item-desc">Crispy fried potatoes with our signature spicy tomato aioli, garnished with smoked paprika and fresh herbs.</p><span class="menu-item-tag">Vegetarian</span></div>
+      <div class="menu-item reveal reveal-delay-1"><div class="menu-item-top"><span class="menu-item-name">Gambas al Ajillo</span><span class="menu-item-price">$18</span></div><p class="menu-item-desc">Wild prawns sautéed in olive oil, garlic, and white wine with a hint of chili and fresh parsley.</p><span class="menu-item-tag">Chef's Pick</span></div>
+      <div class="menu-item reveal reveal-delay-2"><div class="menu-item-top"><span class="menu-item-name">Jamón Ibérico</span><span class="menu-item-price">$24</span></div><p class="menu-item-desc">Hand-carved 36-month aged Iberian ham, served with pan con tomate and Manchego cheese.</p><span class="menu-item-tag">Signature</span></div>
+      <div class="menu-item reveal"><div class="menu-item-top"><span class="menu-item-name">Croquetas de Pollo</span><span class="menu-item-price">$14</span></div><p class="menu-item-desc">Silky béchamel and pulled chicken croquettes, golden-fried with lemon aioli dipping sauce.</p></div>
+      <div class="menu-item reveal reveal-delay-1"><div class="menu-item-top"><span class="menu-item-name">Pulpo a la Gallega</span><span class="menu-item-price">$22</span></div><p class="menu-item-desc">Galician-style octopus with smoked paprika oil on a bed of creamy potato purée.</p><span class="menu-item-tag">Chef's Pick</span></div>
+      <div class="menu-item reveal reveal-delay-2"><div class="menu-item-top"><span class="menu-item-name">Pimientos del Padrón</span><span class="menu-item-price">$11</span></div><p class="menu-item-desc">Blistered green peppers, flash-fried in olive oil and finished with fleur de sel.</p><span class="menu-item-tag">Vegetarian</span></div>
+    </div>
+  </div>
+
+  <div class="menu-panel" id="panel-mains">
+    <div class="menu-grid">
+      <div class="menu-item reveal"><div class="menu-item-top"><span class="menu-item-name">Paella Valenciana</span><span class="menu-item-price">$38</span></div><p class="menu-item-desc">Traditional saffron rice with chicken, rabbit, green beans, and roasted tomatoes. For two.</p><span class="menu-item-tag">For Two</span></div>
+      <div class="menu-item reveal reveal-delay-1"><div class="menu-item-top"><span class="menu-item-name">Cordero al Horno</span><span class="menu-item-price">$42</span></div><p class="menu-item-desc">Slow-roasted rack of lamb with rosemary jus, romesco sauce, and grilled asparagus.</p><span class="menu-item-tag">Signature</span></div>
+      <div class="menu-item reveal reveal-delay-2"><div class="menu-item-top"><span class="menu-item-name">Merluza a la Vasca</span><span class="menu-item-price">$34</span></div><p class="menu-item-desc">Basque-style hake fillet in a delicate parsley and clam sauce with peas and asparagus.</p></div>
+    </div>
+  </div>
+
+  <div class="menu-panel" id="panel-drinks">
+    <div class="menu-grid">
+      <div class="menu-item reveal"><div class="menu-item-top"><span class="menu-item-name">Sangria Roja</span><span class="menu-item-price">$16</span></div><p class="menu-item-desc">Our house red wine sangria with brandy, fresh citrus, cinnamon, and seasonal fruits.</p><span class="menu-item-tag">House Specialty</span></div>
+      <div class="menu-item reveal reveal-delay-1"><div class="menu-item-top"><span class="menu-item-name">Cava Spritz</span><span class="menu-item-price">$14</span></div><p class="menu-item-desc">Spanish sparkling cava with elderflower liqueur, cucumber, and a sprig of fresh mint.</p></div>
+      <div class="menu-item reveal reveal-delay-2"><div class="menu-item-top"><span class="menu-item-name">Rioja Gran Reserva</span><span class="menu-item-price">$18/glass</span></div><p class="menu-item-desc">2018 Marqués de Riscal, Rioja. Deep ruby with notes of dark cherry, leather, and vanilla.</p><span class="menu-item-tag">Wine</span></div>
+    </div>
+  </div>
+
+  <div class="menu-panel" id="panel-desserts">
+    <div class="menu-grid">
+      <div class="menu-item reveal"><div class="menu-item-top"><span class="menu-item-name">Crema Catalana</span><span class="menu-item-price">$10</span></div><p class="menu-item-desc">Traditional custard with a crispy caramelized sugar crust, infused with lemon and cinnamon.</p><span class="menu-item-tag">Classic</span></div>
+      <div class="menu-item reveal reveal-delay-1"><div class="menu-item-top"><span class="menu-item-name">Churros con Chocolate</span><span class="menu-item-price">$12</span></div><p class="menu-item-desc">Hand-rolled churros dusted with cinnamon sugar, served with rich Valrhona drinking chocolate.</p><span class="menu-item-tag">Signature</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div style="max-width:1300px;margin:0 auto">
+    <span class="section-label reveal">Why Choose Us</span>
+    <h2 class="section-title reveal reveal-delay-1">The <em>Experience</em></h2>
+    <div class="gold-line reveal reveal-delay-2"></div>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="exp-num">01</div>
+        <span class="exp-icon">🍷</span>
+        <h3 class="exp-title">Curated Wine Cellar</h3>
+        <p class="exp-desc">Over 200 labels spanning the finest Spanish and international wine regions, selected by our master sommelier.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-1">
+        <div class="exp-num">02</div>
+        <span class="exp-icon">🎵</span>
+        <h3 class="exp-title">Live Music Nights</h3>
+        <p class="exp-desc">Thursday through Saturday evenings, experience live flamenco, jazz, and acoustic performances that set the perfect ambiance.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-2">
+        <div class="exp-num">03</div>
+        <span class="exp-icon">🏛️</span>
+        <h3 class="exp-title">Private Events</h3>
+        <p class="exp-desc">Our private dining room accommodates up to 60 guests with bespoke menus and dedicated service for your special occasions.</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-num">04</div>
+        <span class="exp-icon">👨‍🍳</span>
+        <h3 class="exp-title">Chef's Table</h3>
+        <p class="exp-desc">An exclusive 8-seat experience with a personalized tasting menu presented directly by our executive chef.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-1">
+        <div class="exp-num">05</div>
+        <span class="exp-icon">🌿</span>
+        <h3 class="exp-title">Seasonal Menus</h3>
+        <p class="exp-desc">Our kitchen evolves with the seasons, sourcing peak-season ingredients from local farmers and Spanish importers.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-2">
+        <div class="exp-num">06</div>
+        <span class="exp-icon">✨</span>
+        <h3 class="exp-title">Sangria Bar</h3>
+        <p class="exp-desc">Chicago's most celebrated sangria bar with 12 house recipes, from classic roja to sparkling white and rosé variations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-header">
+    <span class="section-label reveal">Visual Stories</span>
+    <h2 class="section-title reveal reveal-delay-1">Life at <em>Glimmer</em></h2>
+  </div>
+  <div class="gallery-scroll">
+    <div class="gallery-cell-a large"><div class="gallery-cell-content">The Main Dining Room</div><div class="gallery-overlay"><span class="gallery-overlay-text">Ambiance & Atmosphere</span></div></div>
+    <div class="gallery-cell-b small"><div class="gallery-cell-content">Artisan Tapas</div><div class="gallery-overlay"><span class="gallery-overlay-text">Culinary Art</span></div></div>
+    <div class="gallery-cell-c large"><div class="gallery-cell-content">The Wine Cellar</div><div class="gallery-overlay"><span class="gallery-overlay-text">200+ Labels</span></div></div>
+    <div class="gallery-cell-d small"><div class="gallery-cell-content">Live Flamenco</div><div class="gallery-overlay"><span class="gallery-overlay-text">Thursday Nights</span></div></div>
+    <div class="gallery-cell-e large"><div class="gallery-cell-content">Private Dining</div><div class="gallery-overlay"><span class="gallery-overlay-text">Events & Celebrations</span></div></div>
+    <div class="gallery-cell-f small"><div class="gallery-cell-content">The Sangria Bar</div><div class="gallery-overlay"><span class="gallery-overlay-text">12 Signatures</span></div></div>
+  </div>
+</section>
+
+<section id="reserve">
+  <div class="reserve-wrap">
+    <span class="section-label reveal">Book Your Evening</span>
+    <h2 class="section-title reveal reveal-delay-1">Make a <em>Reservation</em></h2>
+    <div class="gold-line reveal reveal-delay-2" style="margin: 24px auto;"></div>
+    <p class="reveal reveal-delay-2" style="font-size:1.1rem;font-weight:300;color:var(--text-dim);line-height:1.8;">Secure your seat at Chicago's most celebrated tapas lounge. We look forward to curating an unforgettable evening for you.</p>
+    <div class="reserve-form reveal">
+      <div class="form-group">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" placeholder="Alexandra">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" placeholder="Rivera">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" placeholder="alex@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" placeholder="+1 (312) 000-0000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Time</label>
+        <select class="form-control">
+          <option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option>
+          <option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option>
+          <option>9:00 PM</option><option>9:30 PM</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Party Size</label>
+        <select class="form-control">
+          <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option>
+          <option>4 Guests</option><option>5–8 Guests</option><option>9+ Guests (Private)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Occasion</label>
+        <select class="form-control">
+          <option>Regular Dining</option><option>Birthday</option><option>Anniversary</option>
+          <option>Business Dinner</option><option>Proposal</option><option>Other</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label class="form-label">Special Requests</label>
+        <textarea class="form-control" rows="4" placeholder="Dietary restrictions, seating preferences, or any special arrangements..."></textarea>
+      </div>
+      <div class="form-group full form-submit" style="text-align:center">
+        <button class="btn-primary" onclick="handleReserve()">Confirm Reservation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="test-header">
+    <span class="section-label reveal">Guest Voices</span>
+    <h2 class="section-title reveal reveal-delay-1">What They <em>Say</em></h2>
+    <div class="gold-line reveal reveal-delay-2" style="margin:24px auto;"></div>
+  </div>
+  <div class="test-grid">
+    <div class="test-card reveal">
+      <div class="test-quote">"</div>
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">An absolute gem in Chicago's dining scene. The patatas bravas are legendary, and the sangria bar is something truly special. We celebrated our anniversary here and it felt like a dream.</p>
+      <div class="test-author">
+        <div class="test-name">Isabella M.</div>
+        <div class="test-role">Chicago, IL · Loyal Guest Since 2012</div>
+      </div>
+    </div>
+    <div class="test-card reveal reveal-delay-1">
+      <div class="test-quote">"</div>
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">The Chef's Table experience was extraordinary. Chef walked us through each dish personally, and the wine pairings were impeccable. Worth every penny for a truly unforgettable evening.</p>
+      <div class="test-author">
+        <div class="test-name">James & Sarah T.</div>
+        <div class="test-role">New York, NY · Business Travelers</div>
+      </div>
+    </div>
+    <div class="test-card reveal reveal-delay-2">
+      <div class="test-quote">"</div>
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">Glimmer captures the true spirit of Spanish tapas culture. The ambiance is electric on Friday nights with the live music, and the food quality has never wavered in 10+ years of visiting.</p>
+      <div class="test-author">
+        <div class="test-name">Carlos R.</div>
+        <div class="test-role">Madrid, Spain · Food Critic</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">GLIMMER</div>
+      <span class="footer-brand-sub">Premium Lounge & Tapas Bar</span>
+      <p class="footer-desc">Chicago's premier destination for authentic Spanish tapas, fine wines, and unforgettable experiences since 1985.</p>
+      <div class="footer-socials">
+        <a class="social-btn" href="#" aria-label="Instagram">ig</a>
+        <a class="social-btn" href="#" aria-label="Facebook">fb</a>
+        <a class="social-btn" href="#" aria-label="Twitter">tw</a>
+        <a class="social-btn" href="#" aria-label="OpenTable">ot</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">The Menu</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve">Reservations</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Hours</div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Mon – Wed</div>
+        <div class="footer-contact-val">5:00 PM – 10:00 PM</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Thu – Fri</div>
+        <div class="footer-contact-val">5:00 PM – 11:30 PM</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Sat – Sun</div>
+        <div class="footer-contact-val">11:30 AM – 11:00 PM</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Address</div>
+        <div class="footer-contact-val">2024 N. Halsted St.<br>Chicago, IL 60614</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Phone</div>
+        <div class="footer-contact-val">(773) 935-5000</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-label">Email</div>
+        <div class="footer-contact-val">hello@glimmer.club</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Glimmer. All rights reserved.</div>
+    <div class="footer-copy">Privacy Policy · Terms of Service · Accessibility</div>
+  </div>
+</footer>
+
+<script>
+// CURSOR
+const dot = document.getElementById('cursorDot');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
+function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); }
+animRing();
+
+// NAV SCROLL
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+
+// PARTICLES
+const pc = document.getElementById('particles');
+for (let i = 0; i < 20; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const s = Math.random() * 4 + 2;
+  p.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${10+Math.random()*20}s;animation-delay:${Math.random()*15}s;`;
+  pc.appendChild(p);
+}
+
+// REVEAL
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// TABS
+function switchTab(e, id) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+  e.target.classList.add('active');
+  document.getElementById('panel-'+id).classList.add('active');
+  document.querySelectorAll('#panel-'+id+' .reveal').forEach(el => { el.classList.remove('visible'); setTimeout(() => el.classList.add('visible'), 50); });
+}
+
+// MOBILE NAV
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+function closeMobile() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+// RESERVE
+function handleReserve() {
+  const btn = document.querySelector('.form-submit .btn-primary');
+  btn.textContent = '✓ Reservation Confirmed!';
+  btn.style.background = '#4a9a5a';
+  btn.style.color = '#ffffff';
+  setTimeout(() => { btn.textContent = 'Confirm Reservation'; btn.style.background = ''; btn.style.color = ''; }, 3000);
+}
+</script>
+</body>
+</html>
